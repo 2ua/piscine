@@ -10,14 +10,14 @@ Writing this after the first day: I had an awful start. My sleep schedule went o
 - [ ] Shell01
 
 ### C
-- [ ] C00 (In progress)
+- [x] C00 (Done; awaiting evaluation)
 - [ ] C01
 - [ ] C02
 - [ ] C03
 - [ ] C04
 - [ ] C05
 - [ ] C06
-- [ ] C07
+- [ ] C07 (In progress)
 - [ ] C08
 - [ ] C09
 - [ ] C10
