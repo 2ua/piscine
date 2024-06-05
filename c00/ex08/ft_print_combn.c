@@ -1,10 +1,10 @@
 #include <stdio.h>
-#include <stdio.h>'
+#include <unistd.h>
 
 int first = 0;
 
-void getAscendingOrder(int n, int start, int currentLength, int result[]) {
-    if (currentLength == n) {
+void get_ascending_order(int n, int start, int length, int result[]) {
+    if (length == n) {
         if(first == 0){
             first = 1;
         } else{
@@ -19,8 +19,8 @@ void getAscendingOrder(int n, int start, int currentLength, int result[]) {
     }
 
     for (int i = start; i <= 9; i++) {
-        result[currentLength] = i;
-        getAscendingOrder(n, i + 1, currentLength + 1, result);
+        result[length] = i;
+        get_ascending_order(n, i + 1, length + 1, result);
     }
 }
 
@@ -30,5 +30,5 @@ void ft_print_combn(int n) {
     }
 
     int result[n];
-    getAscendingOrder(n, 0, 0, result);
+    get_ascending_order(n, 0, 0, result);
 }

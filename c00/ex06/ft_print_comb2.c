@@ -8,6 +8,7 @@ void ft_print_comb2(void){
 
     while(i <= 98){
         int j = i+1;
+        
         while(j <= 99){
             split[0] = '0' + i / 10;
             split[1] = '0' + i % 10;
@@ -20,6 +21,7 @@ void ft_print_comb2(void){
             write(1,", ",2);
             j++;
         }
+
         i++;
     }
 }
