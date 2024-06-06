@@ -1,8 +1,5 @@
 > **Note:** This repository is for educational and perservatory purposes only. If you are a 42 student, please do not copy any of the code for your own projects. You wont learn anything from this and the only person you're cheating is yourself :frowning:
 
-# Justin's Piscine
-Writing this after the first day: I had an awful start. My sleep schedule went on a downward spiral thanks to health issues so I was very exhausted on the first day and had to leave after only clocking 6 hours. I decided to give up on the Shell project hoping it'd allow me to do the C projects, but the C projects were still locked. I decided to just do the C projects at home after midnight when I am awake.
-
 ## Progress and Grades
 
 ### Shell

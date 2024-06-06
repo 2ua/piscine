@@ -1,26 +1,29 @@
 #include <stdio.h>
 #include <unistd.h>
 
-int first = 0;
+void get_ascending_order(int n, int start, int length, int result[], int first) {
+    int i;
 
-void get_ascending_order(int n, int start, int length, int result[]) {
-    if (length == n) {
-        if(first == 0){
-            first = 1;
-        } else{
+    if (length == n)
+    {
+        if(first == 0)
+        {
             write(1, ", ", 2);
         }
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++)
+        {
             char digit = result[i] + '0';
             write(1,&digit,1);
         }
         return;
     }
-
-    for (int i = start; i <= 9; i++) {
+    i = start;
+    while (i <= 9)
+    {
+        i++;
         result[length] = i;
-        get_ascending_order(n, i + 1, length + 1, result);
+        get_ascending_order(n, i + 1, length + 1, result, 0);
     }
 }
 
@@ -30,5 +33,5 @@ void ft_print_combn(int n) {
     }
 
     int result[n];
-    get_ascending_order(n, 0, 0, result);
+    get_ascending_order(n, 0, 0, result, 1);
 }
