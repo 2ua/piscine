@@ -7,7 +7,7 @@
 - [ ] Shell01
 
 ### C
-- [x] C00 (Done; awaiting evaluation)
+- [x] C00 (50%; ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: OK | ex05: Does not compile (I FORGOT TO ADD "ft_" TO THE START OF THE FUNCTION... HELP | ex06: OK | ex07: KO | ex08: Nothing turned in)
 - [ ] C01 (In progress)
 - [ ] C02
 - [ ] C03
@@ -23,13 +23,13 @@
 - [ ] C13
 
 ### Exams
-- [ ] Exam00
+- [x] Exam00 (PASSED 24/100; Got stuck on strings & pointer exercise)
 - [ ] Exam01
 - [ ] Exam02
 - [ ] ExamFinal
 
 ### Rushes
-- [ ] Rush00
+- [x] Rush00 (Done; Awaiting review..)
 - [ ] Rush01
 - [ ] Rush02
   
