@@ -1,30 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jleissiu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/05 09:39:45 by jleissiu          #+#    #+#             */
-/*   Updated: 2024/06/05 10:44:07 by jleissiu         ###   ########.fr       */
+/*   Created: 2024/06/08 13:37:16 by jleissiu          #+#    #+#             */
+/*   Updated: 2024/06/09 16:29:17 by dconstan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	rush(int x, int y);
 
-void	ft_print_reverse_alphabet(void)
+int	main(void)
 {
-	int	i;
-
-	i = 'z';
-	while (i >= 'a')
-	{
-		write (1, &i, 1);
-		i--;
-	}
+	rush(5, 3);
+	return (0);
 }
-
-// int	main(void)
-// {
-// 	ft_print_reverse_alphabet();
-// }

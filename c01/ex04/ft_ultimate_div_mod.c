@@ -1,30 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
+/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jleissiu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/05 09:39:45 by jleissiu          #+#    #+#             */
-/*   Updated: 2024/06/05 10:44:07 by jleissiu         ###   ########.fr       */
+/*   Created: 2024/06/05 15:01:47 by jleissiu          #+#    #+#             */
+/*   Updated: 2024/06/05 15:01:50 by jleissiu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_print_reverse_alphabet(void)
+void	ft_ultimate_div_mod(int *a, int *b)
 {
-	int	i;
+	int c;
+	
+	c = *a;
 
-	i = 'z';
-	while (i >= 'a')
-	{
-		write (1, &i, 1);
-		i--;
-	}
+	*a = *a / *b;
+	*b = c - *b / *a;
 }
 
-// int	main(void)
-// {
-// 	ft_print_reverse_alphabet();
-// }
+int main()
+{
+	int a;
+	int b;
+	int *ptr1;
+	int *ptr2;
+
+	a = 23;
+	b = 4;
+	ptr1 = &a;
+	ptr2 = &b;
+	ft_ultimate_div_mod(ptr1,ptr2);
+
+	write(1, *ptr1, 1);
+	write(1, *ptr2, 1);
+}

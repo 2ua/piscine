@@ -1,8 +1,30 @@
-#include <stdio.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jleissiu <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/06/05 09:42:16 by jleissiu          #+#    #+#             */
+/*   Updated: 2024/06/05 09:42:18 by jleissiu         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 
-void ft_print_numbers(void){
-    for(int i='0';i<='9';i++){
-        write(1,&i,1);
-    }
+void	ft_print_numbers(void)
+{
+	int		i;
+
+	i = '0';
+	while (i <= '9')
+	{
+		write (1, &i, 1);
+		i++;
+	}
 }
+
+// int	main(void)
+// {
+// 	ft_print_numbers();
+// }

@@ -1,30 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
+/*   ft_div_mod.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jleissiu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/05 09:39:45 by jleissiu          #+#    #+#             */
-/*   Updated: 2024/06/05 10:44:07 by jleissiu         ###   ########.fr       */
+/*   Created: 2024/06/05 13:01:23 by jleissiu          #+#    #+#             */
+/*   Updated: 2024/06/05 13:01:26 by jleissiu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_print_reverse_alphabet(void)
+void	ft_div_mod(int a, int b, int *div, int *mod)
 {
-	int	i;
+	int		remainder;
+	int		division;
 
-	i = 'z';
-	while (i >= 'a')
-	{
-		write (1, &i, 1);
-		i--;
-	}
+	division = a / b;
+	remainder = a - b * division;
+	*div = division;
+	*mod = remainder;
+	return ;
 }
 
-// int	main(void)
-// {
-// 	ft_print_reverse_alphabet();
-// }
+int	main(void)
+{
+	int		num1;
+	int		num2;
+	int		*divi;
+	int		*modu;
+
+	num1 = 10;
+	num2 = 6;
+	divi = &num1;
+	modu = &num2;
+	ft_div_mod(num1, num2, divi, modu);
+	write(1, &num1, 1);
+}
