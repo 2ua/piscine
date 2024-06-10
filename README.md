@@ -7,7 +7,7 @@
 - [ ] Shell01
 
 ### C
-- [x] C00 (50%; ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: OK | ex05: Does not compile (I FORGOT TO ADD "ft_" TO THE START OF THE FUNCTION... HELP | ex06: OK | ex07: KO | ex08: Nothing turned in)
+- [x] C00 (50%; I FORGOT TO ADD "ft_" TO THE START OF THE FUNCTION FOR ex05... HELP)
 - [ ] C01 (In progress)
 - [ ] C02
 - [ ] C03
