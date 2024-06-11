@@ -2,14 +2,14 @@
 
 ## Progress and Grades
 
-### Shell
+### Shell Assignments
 - [x] Shell00 (0%; Gave up)
 - [ ] Shell01
 
-### C
-- [x] C00 (50%; I FORGOT TO ADD "ft_" TO THE START OF THE FUNCTION FOR ex05... HELP)
+### C Assignments 
+- [x] C00 (PASSED 50%; I FORGOT TO ADD "ft_" TO THE START OF THE FUNCTION FOR ex05... HELP)
 - [ ] C01 (In progress)
-- [ ] C02
+- [ ] C02 (In progress)
 - [ ] C03
 - [ ] C04
 - [ ] C05
@@ -23,13 +23,13 @@
 - [ ] C13
 
 ### Exams
-- [x] Exam00 (PASSED 24/100; Got stuck on strings & pointer exercise)
+- [x] Exam00 (PASSED 24%; Got stuck on strings & pointer exercise)
 - [ ] Exam01
 - [ ] Exam02
 - [ ] ExamFinal
 
-### Rushes
-- [x] Rush00 (Done; Awaiting review..)
+### Rushes (Group Project)
+- [x] Rush00 (ACED 116%; as Group Leader)
 - [ ] Rush01
 - [ ] Rush02
   
