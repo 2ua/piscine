@@ -10,9 +10,19 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
 void	ft_ft(int *nbr)
 {
 	*nbr = 42;
 }
+
+// int main()
+// {
+// 	#include <stdio.h>
+// 	int		n;
+// 	int		*ptr;
+
+// 	n = 0;
+// 	ptr = &n;
+// 	ft_ft(ptr);
+// 	printf("%d\n", n);
+// }

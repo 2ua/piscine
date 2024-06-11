@@ -1,38 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_div_mod.c                                       :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jleissiu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/05 13:01:23 by jleissiu          #+#    #+#             */
-/*   Updated: 2024/06/05 13:01:26 by jleissiu         ###   ########.fr       */
+/*   Created: 2024/06/10 11:24:11 by jleissiu          #+#    #+#             */
+/*   Updated: 2024/06/10 11:27:47 by jleissiu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_div_mod(int a, int b, int *div, int *mod)
-{
-	int		remainder;
-	int		division;
+#include <unistd.h>
 
-	division = a / b;
-	remainder = a % b;
-	*div = division;
-	*mod = remainder;
+void	ft_putstr(char *str)
+{
+	write(1, &str, 1);
 }
 
-// int	main(void)
-// {
-// 	#include <stdio.h>
-// 	int		num1;
-// 	int		num2;
-// 	int		*divi;
-// 	int		*modu;
-
-// 	num1 = 0;
-// 	num2 = 0;
-// 	divi = &num1;
-// 	modu = &num2;
-// 	ft_div_mod(50, 6, divi, modu);
-// 	printf("%d\n%d", num1, num2);
-// }
+int main()
+{
+	char	string;
+	string[] = "Hello World!";
+	ft_putstr(string);
+}

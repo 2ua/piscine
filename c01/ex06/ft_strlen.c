@@ -1,38 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_div_mod.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jleissiu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/05 13:01:23 by jleissiu          #+#    #+#             */
-/*   Updated: 2024/06/05 13:01:26 by jleissiu         ###   ########.fr       */
+/*   Created: 2024/06/10 12:39:01 by jleissiu          #+#    #+#             */
+/*   Updated: 2024/06/10 12:39:03 by jleissiu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_div_mod(int a, int b, int *div, int *mod)
-{
-	int		remainder;
-	int		division;
+#include <unistd.h>
 
-	division = a / b;
-	remainder = a % b;
-	*div = division;
-	*mod = remainder;
+int ft_strlen(char *str)
+{
+    int len;
+
+    while (len > 0)
+    {
+        if (str[len] != "\0")
+        {
+            len++;
+        }
+        else
+        {
+            return len;
+        }
+    }
 }
 
-// int	main(void)
-// {
-// 	#include <stdio.h>
-// 	int		num1;
-// 	int		num2;
-// 	int		*divi;
-// 	int		*modu;
+int main()
+{
+    char *string[] = {"a", "b", "c", "d", "e"};
 
-// 	num1 = 0;
-// 	num2 = 0;
-// 	divi = &num1;
-// 	modu = &num2;
-// 	ft_div_mod(50, 6, divi, modu);
-// 	printf("%d\n%d", num1, num2);
-// }
+    int length = ft_strlen(string);
+    write(1, &length, 1);
+}

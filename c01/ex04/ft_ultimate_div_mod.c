@@ -10,31 +10,29 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
 void	ft_ultimate_div_mod(int *a, int *b)
 {
-	int c;
+	int		c;
 	
 	c = *a;
 
 	*a = *a / *b;
-	*b = c - *b / *a;
+	*b = c % *b;
 }
 
-int main()
-{
-	int a;
-	int b;
-	int *ptr1;
-	int *ptr2;
+// int main()
+// {
+// 	#include <stdio.h>
+// 	int a;
+// 	int b;
+// 	int *ptr1;
+// 	int *ptr2;
 
-	a = 23;
-	b = 4;
-	ptr1 = &a;
-	ptr2 = &b;
-	ft_ultimate_div_mod(ptr1,ptr2);
+// 	a = 10;
+// 	b = 5;
+// 	ptr1 = &a;
+// 	ptr2 = &b;
+// 	ft_ultimate_div_mod(ptr1, ptr2);
 
-	write(1, *ptr1, 1);
-	write(1, *ptr2, 1);
-}
+// 	printf("%d\n%d", a, b);
+// }
