@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jleissiu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/11 15:49:56 by jleissiu          #+#    #+#             */
-/*   Updated: 2024/06/11 15:49:59 by jleissiu         ###   ########.fr       */
+/*   Created: 2024/06/11 16:08:26 by jleissiu          #+#    #+#             */
+/*   Updated: 2024/06/11 16:08:29 by jleissiu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcpy(char *dest, char *src)
+char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
 	int		i;
 
 	i = 0;
-	while (src[i] != '\0')
+	while (src[i] != '\0' && i < n)
 	{
 		dest[i] = src[i];
 		i++;
@@ -27,11 +27,13 @@ char	*ft_strcpy(char *dest, char *src)
 // int main()
 // {
 // 	#include <stdio.h>
+// 	int		amount;
 // 	char	string1[] = "";
 // 	char	string2[] = "Hello world!";
 // 	char	*dest = string1;
 // 	char	*src = string2;
 
-// 	ft_strcpy(dest, src);
-// 	printf("%s\n%s", string1, string2);
+// 	amount = 7;
+// 	ft_strncpy(dest, src, amount);
+// 	printf("%s\n",string1);
 // }
