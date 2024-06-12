@@ -27,18 +27,18 @@ int	ft_str_is_numeric(char *str)
 	return (0);
 }
 
-int main()
-{
-	#include <stdio.h>
-	char	string[] = "test again!";
-	char	string2[] = "0123456789";
-	char	*ptr = string;
-	char	*ptr2 = string2;
-	int		is_numeric;
+// int main()
+// {
+// 	#include <stdio.h>
+// 	char	string[] = "test again!";
+// 	char	string2[] = "0123456789";
+// 	char	*ptr = string;
+// 	char	*ptr2 = string2;
+// 	int		is_numeric;
 
-	is_numeric = ft_str_is_numeric(ptr);
-	printf("%d\n", is_numeric);
+// 	is_numeric = ft_str_is_numeric(ptr);
+// 	printf("%d\n", is_numeric);
 
-	is_numeric = ft_str_is_numeric(ptr2);
-	printf("%d\n", is_numeric);
-}
+// 	is_numeric = ft_str_is_numeric(ptr2);
+// 	printf("%d\n", is_numeric);
+// }

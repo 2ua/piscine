@@ -1,43 +1,53 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_uppercase.c                              :+:      :+:    :+:   */
+/*   ft_strcapitalize.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jleissiu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/11 16:38:01 by jleissiu          #+#    #+#             */
-/*   Updated: 2024/06/11 16:38:04 by jleissiu         ###   ########.fr       */
+/*   Created: 2024/06/12 13:50:36 by jleissiu          #+#    #+#             */
+/*   Updated: 2024/06/12 13:50:36 by jleissiu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_uppercase(char *str)
+char	*ft_strcapitalize(char *str)
 {
 	int		i;
 
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (str[i] >= 'A' && str[i] <= 'Z')
+		if (str[i] == ' ')
 		{
-			i++;
-			continue ;
+			if (str[i + 1] >= 'a' && str[i + 1] <= 'z')
+			{
+				str[i + 1] -= 32;
+			}
 		}
-		return (1);
+		if (i == 0)
+		{
+			if (str[i] >= 'a' && str[i] <= 'z')
+			{
+				str[i++] -= 32;
+			}
+		}
+		i++;
 	}
-	return (0);
+	return (str);
 }
 
 // int main()
 // {
 // 	#include <stdio.h>
-// 	char	string[] = "UPPERCASE";
-// 	char	string2[] = "lowercase";
+// 	char	string[] = "hey this is an Almost   fully 7owercase string :D";
+// 	char	string2[] = "thats     alot      of     spaces  5  A";
 // 	char	*ptr = string;
 // 	char	*ptr2 = string2;
-// 	int		is_uppercase;
-// 	is_uppercase = ft_str_is_uppercase(ptr);
-// 	printf("%d\n", is_uppercase);
+// 	char	 *result;
 
-// 	is_uppercase = ft_str_is_uppercase(ptr2);
-// 	printf("%d\n", is_uppercase);
+// 	result = ft_strcapitalize(ptr);
+// 	printf("%s\n", result);
+
+// 	result = ft_strcapitalize(ptr2);
+// 	printf("%s\n", result);
 // }

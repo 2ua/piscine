@@ -1,43 +1,49 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_uppercase.c                              :+:      :+:    :+:   */
+/*   ft_strupcase.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jleissiu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/11 16:38:01 by jleissiu          #+#    #+#             */
-/*   Updated: 2024/06/11 16:38:04 by jleissiu         ###   ########.fr       */
+/*   Created: 2024/06/12 13:25:15 by jleissiu          #+#    #+#             */
+/*   Updated: 2024/06/12 13:25:17 by jleissiu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_uppercase(char *str)
+char	*ft_strupcase(char *str)
 {
 	int		i;
 
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (str[i] >= 'A' && str[i] <= 'Z')
+		if (str[i] >= 'a' && str[i] <= 'z')
+		{
+			str[i] -= 32;
+			i++;
+			continue ;
+		}
+		else
 		{
 			i++;
 			continue ;
 		}
-		return (1);
 	}
-	return (0);
+	return (str);
 }
 
 // int main()
 // {
 // 	#include <stdio.h>
-// 	char	string[] = "UPPERCASE";
-// 	char	string2[] = "lowercase";
+// 	char	string[] = "hey this is an Almost fully lowercase string :D";
+// 	char	string2[] = "THIS ONE HAS MOSTLY UPPERcase LETTERS 0123456789";
 // 	char	*ptr = string;
 // 	char	*ptr2 = string2;
-// 	int		is_uppercase;
-// 	is_uppercase = ft_str_is_uppercase(ptr);
-// 	printf("%d\n", is_uppercase);
+// 	char	 *result;
 
-// 	is_uppercase = ft_str_is_uppercase(ptr2);
-// 	printf("%d\n", is_uppercase);
+// 	result = ft_strupcase(ptr);
+// 	printf("%s\n", result);
+
+// 	result = ft_strupcase(ptr2);
+// 	printf("%s\n", result);
 // }

@@ -27,18 +27,18 @@ int	ft_str_is_lowercase(char *str)
 	return (0);
 }
 
-int main()
-{
-	#include <stdio.h>
-	char	string[] = "alowercasestring";
-	char	string2[] = "thisonehasAnuppercaseletter";
-	char	*ptr = string;
-	char	*ptr2 = string2;
-	int		is_lowercase;
+// int main()
+// {
+// 	#include <stdio.h>
+// 	char	string[] = "alowercasestring";
+// 	char	string2[] = "thisonehasAnuppercaseletter";
+// 	char	*ptr = string;
+// 	char	*ptr2 = string2;
+// 	int		is_lowercase;
 
-	is_lowercase = ft_str_is_lowercase(ptr);
-	printf("%d\n", is_lowercase);
+// 	is_lowercase = ft_str_is_lowercase(ptr);
+// 	printf("%d\n", is_lowercase);
 
-	is_lowercase = ft_str_is_lowercase(ptr2);
-	printf("%d\n", is_lowercase);
-}
+// 	is_lowercase = ft_str_is_lowercase(ptr2);
+// 	printf("%d\n", is_lowercase);
+// }
