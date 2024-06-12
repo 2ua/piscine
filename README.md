@@ -9,7 +9,7 @@
 ### C Assignments 
 - [x] [C00](https://github.com/2ua/piscine/tree/main/c00) (PASSED 50%; I FORGOT TO ADD "ft_" TO THE START OF THE FUNCTION FOR ex05... HELP)
 - [ ] [C01](https://github.com/2ua/piscine/tree/main/c01) (In progress)
-- [ ] [C02](https://github.com/2ua/piscine/tree/main/c02) (In progress)
+- [ ] [C02](https://github.com/2ua/piscine/tree/main/c02) (Done; Awaiting review...)
 - [ ] C03
 - [ ] C04
 - [ ] C05
