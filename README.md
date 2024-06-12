@@ -7,9 +7,9 @@
 - [ ] Shell01
 
 ### C Assignments 
-- [x] [C00 (PASSED 50%; I FORGOT TO ADD "ft_" TO THE START OF THE FUNCTION FOR ex05... HELP)](https://github.com/2ua/piscine/tree/main/c00)
-- [ ] [C01 (In progress)](https://github.com/2ua/piscine/tree/main/c01)
-- [ ] [C02 (In progress)](https://github.com/2ua/piscine/tree/main/c02)
+- [x] [C00](https://github.com/2ua/piscine/tree/main/c00) (PASSED 50%; I FORGOT TO ADD "ft_" TO THE START OF THE FUNCTION FOR ex05... HELP)
+- [ ] [C01](https://github.com/2ua/piscine/tree/main/c01) (In progress)
+- [ ] [C02](https://github.com/2ua/piscine/tree/main/c02) (In progress)
 - [ ] C03
 - [ ] C04
 - [ ] C05
@@ -29,7 +29,7 @@
 - [ ] ExamFinal
 
 ### Rushes (Group Project)
-- [x] [Rush00 (ACED 116%; as Group Leader)](https://github.com/2ua/piscine/tree/main/rush00)
+- [x] [Rush00](https://github.com/2ua/piscine/tree/main/rush00) (ACED 116%; as Group Leader)
 - [ ] Rush01
 - [ ] Rush02
   
