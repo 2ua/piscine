@@ -10,29 +10,28 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
 int ft_strlen(char *str)
 {
     int len;
 
-    while (len > 0)
+    len = 0;
+    while (str[len] != '\0')
     {
-        if (str[len] != "\0")
-        {
-            len++;
-        }
-        else
-        {
-            return len;
-        }
+        len++;
     }
+    return len;
 }
 
 int main()
 {
-    char *string[] = {"a", "b", "c", "d", "e"};
+    #include <stdio.h>
+    char string[] = "super";
+    char string2[] = "super long";
+    char *ptr = string;
+    char *ptr2 = string2;
 
-    int length = ft_strlen(string);
-    write(1, &length, 1);
+    int length = ft_strlen(ptr);
+    int length2 = ft_strlen(ptr2);
+    printf("%d\n", length);
+    printf("%d", length2);
 }

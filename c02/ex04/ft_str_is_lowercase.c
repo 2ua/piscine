@@ -24,6 +24,10 @@ int	ft_str_is_lowercase(char *str)
 		}
 		return (1);
 	}
+	if (i < 1)
+	{
+		return (1);
+	}
 	return (0);
 }
 

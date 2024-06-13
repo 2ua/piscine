@@ -23,11 +23,7 @@ char	*ft_strupcase(char *str)
 			i++;
 			continue ;
 		}
-		else
-		{
-			i++;
-			continue ;
-		}
+		i++;
 	}
 	return (str);
 }

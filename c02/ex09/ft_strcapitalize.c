@@ -17,7 +17,7 @@ char	*ft_strcapitalize(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (str[i] == ' ')
+		if (str[i] == ' ' || str[i] == '-' || str[i] == '+')
 		{
 			if (str[i + 1] >= 'a' && str[i + 1] <= 'z')
 			{

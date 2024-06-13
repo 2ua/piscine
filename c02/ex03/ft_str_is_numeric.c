@@ -24,13 +24,17 @@ int	ft_str_is_numeric(char *str)
 		}
 		return (1);
 	}
+	if (i < 1)
+	{
+		return (1);
+	}
 	return (0);
 }
 
 // int main()
 // {
 // 	#include <stdio.h>
-// 	char	string[] = "test again!";
+// 	char	string[] = "test!";
 // 	char	string2[] = "0123456789";
 // 	char	*ptr = string;
 // 	char	*ptr2 = string2;
