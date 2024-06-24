@@ -22,16 +22,16 @@ int ft_strlen(char *str)
     return len;
 }
 
-int main()
-{
-    #include <stdio.h>
-    char string[] = "super";
-    char string2[] = "super long";
-    char *ptr = string;
-    char *ptr2 = string2;
+// int main()
+// {
+//     #include <stdio.h>
+//     char string[] = "super";
+//     char string2[] = "super long";
+//     char *ptr = string;
+//     char *ptr2 = string2;
 
-    int length = ft_strlen(ptr);
-    int length2 = ft_strlen(ptr2);
-    printf("%d\n", length);
-    printf("%d", length2);
-}
+//     int length = ft_strlen(ptr);
+//     int length2 = ft_strlen(ptr2);
+//     printf("%d\n", length);
+//     printf("%d", length2);
+// }

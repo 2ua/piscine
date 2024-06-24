@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jleissiu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/10 11:24:11 by jleissiu          #+#    #+#             */
-/*   Updated: 2024/06/10 11:27:47 by jleissiu         ###   ########.fr       */
+/*   Created: 2024/06/23 15:56:58 by jleissiu          #+#    #+#             */
+/*   Updated: 2024/06/23 15:57:01 by jleissiu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,12 @@
 
 void	ft_putstr(char *str)
 {
-	int		i;
-
-	i = 0;
-	while (i != '\0')
-	{
-		write(1, &str[i], 1);
-	}
+	write(1, &str, 1);
 }
 
-int main()
-{
-	char	string[] = "Hello World!";
-	char	*ptr = string;
-
-	ft_putstr(ptr);
-}
+// int main()
+// {
+// 	char	string;
+// 	string[] = "Hello World!";
+// 	ft_putstr(string);
+// }
