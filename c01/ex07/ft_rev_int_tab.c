@@ -10,44 +10,34 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-    #include <stdio.h>
-
-
-void ft_rev_int_tab(int *tab, int size)
+void	ft_rev_int_tab(int *tab, int size)
 {
-    int		i;
+	int		i;
 	int		temp;
-	int		len;
 
-	len = 0;
 	i = 0;
-	if (size % 2 == 1)
-	{
-		len += 1;
-	}
-	len += size / 2;
-
-	while (i <= len)
+	while (i < size / 2)
 	{
 		temp = tab[i];
-		tab[i] = tab[size - i];
-		tab[size - i] = temp;
+		tab[i] = tab[size - 1 - i];
+		tab[size - 1 - i] = temp;
 		i++;
 	}
 }
 
 // int main()
 // {
+// 	#include <stdio.h>
 //     int nums[] = {1, 2, 3, 4, 5, 6, 7};
+// 	int amount = 7;
 //     int *ptr = nums;
-//     int amount = 7;
+// 	int	i;
 
+// 	i = 0;
 //     ft_rev_int_tab(ptr, amount);
-//     printf("%d", nums[0]);
-//     printf("%d", nums[1]);
-//     printf("%d", nums[2]);
-// 	printf("%d", nums[3]);
-//     printf("%d", nums[4]);
-//     printf("%d", nums[5]);
-//     printf("%d", nums[6]);
+//     while (i < amount)
+// 	{
+// 		write(1, &nums[i], 1);
+// 		i++;
+// 	}
 // }

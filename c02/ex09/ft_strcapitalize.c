@@ -12,7 +12,7 @@
 
 char	*ft_strcapitalize(char *str)
 {
-	int		i;
+	unsigned int		i;
 
 	i = 0;
 	while (str[i] != '\0')
@@ -39,7 +39,7 @@ char	*ft_strcapitalize(char *str)
 // int main()
 // {
 // 	#include <stdio.h>
-// 	char	string[] = "hey this is an Almost   fully 7owercase string :D";
+// 	char	string[] = "   -- ++++helloo  hi-- hii++hii";
 // 	char	string2[] = "thats     alot      of     spaces  5  A";
 // 	char	*ptr = string;
 // 	char	*ptr2 = string2;

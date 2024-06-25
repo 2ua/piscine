@@ -12,22 +12,19 @@
 
 int	ft_str_is_alpha(char *str)
 {
-	int		i;
+	unsigned int		i;
+	int		is_letter;
+	int		is_capital_letter;
 
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (str[i] >= 'A' && str[i] <= 'Z')
+		is_letter = //check if its A to Z et etc store it yeah
+		if (!((str[i] >= 'A' && str[i] <= 'Z') || (str[i] >= 'a' && str[i] <= 'z')))
 		{
-			i++;
-			continue ;
+			return (1);
 		}
-		else if (str[i] >= 'a' && str[i] <= 'z')
-		{
-			i++;
-			continue ;
-		}
-		return (1);
+		i++;
 	}
 	if (i < 1)
 	{
@@ -40,7 +37,7 @@ int	ft_str_is_alpha(char *str)
 // {
 // 	#include <stdio.h>
 // 	char	string[] = "test!";
-// 	char	string2[] = "valid02alPhaNUMeRic1235TR1NG";
+// 	char	string2[] = "validstringlalala";
 // 	char	*ptr = string;
 // 	char	*ptr2 = string2;
 // 	int		is_alpha;
