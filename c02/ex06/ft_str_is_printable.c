@@ -19,7 +19,7 @@ int	ft_str_is_printable(char *str)
 	{
 		if (!(str[i] >= ' ' && str[i] <= '~'))
 		{
-			return (1);
+			return (0);
 		}
 		i++;
 	}
@@ -27,14 +27,14 @@ int	ft_str_is_printable(char *str)
 	{
 		return (1);
 	}
-	return (0);
+	return (1);
 }
 
 // int main()
 // {
 // 	#include <stdio.h>
-// 	char	string[] = "test!_ yaya 00 HELLO :)";
-// 	char	string2[] = "!\n";
+// 	char	string[] = "Test!_ C 0123456789 HELLoo0O :)";
+// 	char	string2[] = "\n";
 // 	char	*ptr = string;
 // 	char	*ptr2 = string2;
 // 	int		is_printable;

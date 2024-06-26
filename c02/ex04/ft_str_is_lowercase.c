@@ -19,7 +19,7 @@ int	ft_str_is_lowercase(char *str)
 	{
 		if (!(str[i] >= 'a' && str[i] <= 'z'))
 		{
-			return (1);
+			return (0);
 		}
 		i++;
 	}
@@ -27,14 +27,14 @@ int	ft_str_is_lowercase(char *str)
 	{
 		return (1);
 	}
-	return (0);
+	return (1);
 }
 
 // int main()
 // {
 // 	#include <stdio.h>
-// 	char	string[] = "alowercasestring";
-// 	char	string2[] = "thisonehasAnuppercaseletter";
+// 	char	string[] = "UPPERCASE";
+// 	char	string2[] = "lowercase";
 // 	char	*ptr = string;
 // 	char	*ptr2 = string2;
 // 	int		is_lowercase;

@@ -19,7 +19,7 @@ int	ft_str_is_uppercase(char *str)
 	{
 		if (!(str[i] >= 'A' && str[i] <= 'Z'))
 		{
-			return (1);
+			return (0);
 		}
 		i++;
 	}
@@ -27,7 +27,7 @@ int	ft_str_is_uppercase(char *str)
 	{
 		return (1);
 	}
-	return (0);
+	return (1);
 }
 
 // int main()

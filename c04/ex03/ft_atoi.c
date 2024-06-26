@@ -1,37 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jleissiu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/11 15:49:56 by jleissiu          #+#    #+#             */
-/*   Updated: 2024/06/11 15:49:59 by jleissiu         ###   ########.fr       */
+/*   Created: 2024/06/14 14:36:51 by jleissiu          #+#    #+#             */
+/*   Updated: 2024/06/14 14:36:53 by jleissiu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcpy(char *dest, char *src)
+int		ft_atoi(char *str)
 {
-	unsigned int		i;
+	int		i;
+	int 	o;
+	int		num;
 
 	i = 0;
-	while (src[i] != '\0')
+	o = 0;
+	while (!str[i] >= '0' && !str[i] <= '9')
 	{
-		dest[i] = src[i];
-		i++;
+		
 	}
-	dest[i] = '\0';
-	return (dest);
 }
-
-// int main()
-// {
-// 	#include <stdio.h>
-// 	char	string1[] = "xxxxx xxxxxx";
-// 	char	string2[] = "Hello world!";
-// 	char	*dest = string1;
-// 	char	*src = string2;
-
-// 	ft_strcpy(dest, src);
-// 	printf("%s\n%s", string1, string2);
-// }

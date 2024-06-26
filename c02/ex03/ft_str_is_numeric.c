@@ -19,7 +19,7 @@ int	ft_str_is_numeric(char *str)
 	{
 		if (!(str[i] >= '0' && str[i] <= '9'))
 		{
-			return (1);
+			return (0);
 		}
 		i++;
 	}
@@ -27,13 +27,13 @@ int	ft_str_is_numeric(char *str)
 	{
 		return (1);
 	}
-	return (0);
+	return (1);
 }
 
 // int main()
 // {
 // 	#include <stdio.h>
-// 	char	string[] = "test!";
+// 	char	string[] = "test";
 // 	char	string2[] = "0123456789";
 // 	char	*ptr = string;
 // 	char	*ptr2 = string2;
