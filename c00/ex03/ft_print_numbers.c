@@ -6,7 +6,7 @@
 /*   By: jleissiu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 09:42:16 by jleissiu          #+#    #+#             */
-/*   Updated: 2024/06/05 09:42:18 by jleissiu         ###   ########.fr       */
+/*   Updated: 2024/06/11 11:34:20 by jleissiu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	ft_print_numbers(void)
 	}
 }
 
-// int	main(void)
-// {
-// 	ft_print_numbers();
-// }
+int	main(void)
+{
+ 	ft_print_numbers();
+}

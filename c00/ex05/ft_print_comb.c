@@ -6,7 +6,7 @@
 /*   By: jleissiu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/06 09:51:14 by jleissiu          #+#    #+#             */
-/*   Updated: 2024/06/06 09:51:20 by jleissiu         ###   ########.fr       */
+/*   Updated: 2024/06/11 11:36:14 by jleissiu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ void	print_comb(void)
 	combine('0', '1', '2', 1);
 }
 
-// int	main(void)
-// {
-// 	print_comb();
-// }
+int	main(void)
+{
+ 	print_comb();
+}

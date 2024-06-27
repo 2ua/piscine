@@ -14,12 +14,19 @@
 
 void	ft_putstr(char *str)
 {
-	write(1, &str, 1);
+	int		i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		write(1, &str[i], 1);
+		i++;
+	}
 }
 
-// int main()
-// {
-// 	char	string;
-// 	string[] = "Hello World!";
-// 	ft_putstr(string);
-// }
+int main()
+{
+	char	string[] = "Hello world!";
+	char	*ptr = string;
+	ft_putstr(ptr);
+}
